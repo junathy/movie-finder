@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="connect-src 'self' https://www.omdbapi.com;"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Movie Finder</title>
+  </head>
+  <body>
+    <main>
+        <section id="input-container">
+            <input type="text" id="movie-input" placeholder="Enter movie name"/>
+            <button id="search-btn">Search</button>
+        </section>
+    </main>
+    <script src="renderer.js"></script>
+  </body>
+</html>
